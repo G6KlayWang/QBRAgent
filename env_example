@@ -1,0 +1,13 @@
+# Symmons WTW API configuration
+SYM_BASE_URL=https://your-api-host
+
+# Authentication credentials (replace with your own)
+SYM_API_EMAIL=you@example.com
+SYM_API_PASSWORD=replace-me
+
+# OpenAI configuration
+OPENAI_API_KEY=sk-your-openai-key
+OPENAI_MODEL=gpt-4o-mini
+
+# Optional: cache a JWT here to avoid re-authentication on each run
+SYM_API_JWT=
