@@ -48,12 +48,39 @@ class SymmonsAPIClient:
     def list_water_roi(self, property_id: int | str) -> Dict[str, Any]:
         return self._get(f"/api/v2/water-roi/list/{property_id}")
 
+    def property_counts(self, property_id: int | str) -> Dict[str, Any]:
+        return self._get(f"/api/v2/property/{property_id}/counts")
+
+    def report_property_summary(
+        self, property_id: int | str, *, start_date: str, end_date: str
+    ) -> Dict[str, Any]:
+        payload: Dict[str, Any]
+        if isinstance(property_id, int) or str(property_id).isdigit():
+            payload = {
+                "propertyId": int(property_id),
+                "startDate": start_date,
+                "endDate": end_date,
+            }
+        else:
+            payload = {
+                "propertyId": property_id,
+                "startDate": start_date,
+                "endDate": end_date,
+            }
+        return self._post("/api/v2/report/property-summary", json_payload=payload)
+
     # --- Internal helpers -----------------------------------------------------------
 
     def _get(
         self, path: str, *, params: Optional[Dict[str, Any]] = None
     ) -> Dict[str, Any]:
         resp = self._request("GET", path, params=params)
+        return self._parse_json(resp)
+
+    def _post(
+        self, path: str, *, json_payload: Optional[Dict[str, Any]] = None
+    ) -> Dict[str, Any]:
+        resp = self._request("POST", path, json_payload=json_payload)
         return self._parse_json(resp)
 
     def _request(
@@ -156,4 +183,3 @@ def from_env() -> SymmonsAPIClient:
             "SYM_BASE_URL, SYM_API_EMAIL, and SYM_API_PASSWORD must be set."
         )
     return SymmonsAPIClient(base_url=base_url, username=username, password=password)
-
