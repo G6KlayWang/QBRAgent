@@ -1,4 +1,6 @@
 .env
+.venv
 *.postman_collection.json
 __pycache__/
 *.pyc
+*test.txt
