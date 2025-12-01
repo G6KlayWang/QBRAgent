@@ -1,0 +1,269 @@
+{
+  "version": 1,
+  "property_group_id_default": 1,
+  "notes": "Metrics requested by the sustainability / performance reporting brief. Each group is executed in its own agent run.",
+  "groups": [
+    {
+      "name": "Water Data",
+      "description": "Net water savings and consumption context for the property group.",
+      "metrics": [
+        {
+          "key": "gallons_saved_qtd",
+          "label": "Gallons Saved (Quarter-to-Date)",
+          "description": "Net gallons of water saved in the current quarter."
+        },
+        {
+          "key": "gallons_saved_ytd",
+          "label": "Gallons Saved (Year-to-Date)",
+          "description": "Net gallons of water saved since the start of the calendar year."
+        },
+        {
+          "key": "gallons_saved_itd",
+          "label": "Gallons Saved (Inception-to-Date)",
+          "description": "Net gallons of water saved since the project started."
+        },
+        {
+          "key": "total_water_usage_gal",
+          "label": "Total Water Usage",
+          "description": "Total gallons of water consumed during the reporting period."
+        },
+        {
+          "key": "baseline_water_usage_gal",
+          "label": "Baseline Water Usage",
+          "description": "Expected gallons of water usage without the Symmons system."
+        },
+        {
+          "key": "normalized_water_use_per_key",
+          "label": "Normalized Water Use",
+          "description": "Water consumption normalized per key / square foot / bed."
+        }
+      ]
+    },
+    {
+      "name": "Carbon Data",
+      "description": "Carbon emissions avoided as a result of water and energy savings.",
+      "metrics": [
+        {
+          "key": "carbon_avoided_tco2e",
+          "label": "Carbon Avoided (tCO2e)",
+          "description": "Metric tons of CO2e avoided through water/energy savings."
+        },
+        {
+          "key": "carbon_avoided",
+          "label": "Carbon Avoided (Calculated)",
+          "description": "Carbon avoided computed as energy_saved × emissions_factor."
+        }
+      ]
+    },
+    {
+      "name": "Financial Data",
+      "description": "Financial impacts and ROI metrics for the property group.",
+      "metrics": [
+        {
+          "key": "water_dollars_saved",
+          "label": "Water Dollars Saved",
+          "description": "Dollar savings from reduced water usage."
+        },
+        {
+          "key": "energy_dollars_saved",
+          "label": "Energy Dollars Saved",
+          "description": "Dollar savings generated from reduced energy/BTU consumption."
+        },
+        {
+          "key": "downtime_dollars_avoided",
+          "label": "Downtime Dollars Avoided",
+          "description": "Estimated costs avoided by preventing outages or downtime."
+        },
+        {
+          "key": "total_financial_impact_usd",
+          "label": "Total Financial Impact",
+          "description": "Combined savings (water + energy + downtime)."
+        },
+        {
+          "key": "run_rate_savings_usd",
+          "label": "Run-Rate Savings",
+          "description": "Quarterly savings run rate compared to contracted fees."
+        },
+        {
+          "key": "contracted_fees_usd",
+          "label": "Contracted Fees",
+          "description": "Total contracted fees for the portfolio or property group."
+        },
+        {
+          "key": "forecast_annual_savings_usd",
+          "label": "Forecast Annual Savings",
+          "description": "Projected savings for the next year."
+        },
+        {
+          "key": "roi_percent",
+          "label": "ROI %",
+          "description": "Return on investment percentage."
+        },
+        {
+          "key": "roi_cumulative_usd",
+          "label": "Cumulative ROI (USD)",
+          "description": "Lifetime or cumulative ROI in dollars."
+        },
+        {
+          "key": "irr_percent",
+          "label": "IRR %",
+          "description": "Internal Rate of Return of the customer investment."
+        },
+        {
+          "key": "payback_status",
+          "label": "Payback Status",
+          "description": "Qualitative payback status (achieved / in progress / pending)."
+        },
+        {
+          "key": "months_to_payback",
+          "label": "Months to Payback",
+          "description": "Months required to reach investment payback."
+        },
+        {
+          "key": "water_usd_saved",
+          "label": "Water USD Saved",
+          "description": "Water cost savings calculated as gallons_saved × water_rate."
+        },
+        {
+          "key": "energy_usd_saved",
+          "label": "Energy USD Saved",
+          "description": "Energy cost savings calculated as btus_saved × energy_rate."
+        },
+        {
+          "key": "downtime_usd_avoided",
+          "label": "Downtime USD Avoided",
+          "description": "Dollar value assigned to downtime or event prevention."
+        }
+      ]
+    },
+    {
+      "name": "Installation Data",
+      "description": "Portfolio installation progress, timing, and execution quality.",
+      "metrics": [
+        {
+          "key": "sites_total",
+          "label": "Total Sites",
+          "description": "Total sites included in the customer portfolio."
+        },
+        {
+          "key": "sites_installed",
+          "label": "Sites Installed",
+          "description": "Number of sites fully installed."
+        },
+        {
+          "key": "sites_in_progress",
+          "label": "Sites In Progress",
+          "description": "Number of sites currently under installation."
+        },
+        {
+          "key": "sites_not_started",
+          "label": "Sites Not Started",
+          "description": "Sites that are contracted but not yet started."
+        },
+        {
+          "key": "median_ship_to_install_days",
+          "label": "Median Ship-to-Install Days",
+          "description": "Median number of days from shipment to installation."
+        },
+        {
+          "key": "on_time_pct",
+          "label": "On-Time Percentage",
+          "description": "Percentage of installations completed on time."
+        }
+      ]
+    },
+    {
+      "name": "Device Data",
+      "description": "Device health, online status, and alert telemetry.",
+      "metrics": [
+        {
+          "key": "device_online_pct",
+          "label": "Device Online %",
+          "description": "Percentage of devices currently online."
+        },
+        {
+          "key": "device_health_pct",
+          "label": "Device Health %",
+          "description": "Percentage of devices that report healthy status."
+        },
+        {
+          "key": "total_alerts",
+          "label": "Total Alerts",
+          "description": "Total number of alerts triggered during the reporting period."
+        },
+        {
+          "key": "alerts_by_type",
+          "label": "Alerts by Type",
+          "description": "Breakdown of alerts by category or severity."
+        },
+        {
+          "key": "unresolved_alerts",
+          "label": "Unresolved Alerts",
+          "description": "Count of alerts that remain open or unresolved."
+        },
+        {
+          "key": "alert_ack_pct",
+          "label": "Alert Acknowledgement %",
+          "description": "Percentage of alerts acknowledged by users."
+        }
+      ]
+    },
+    {
+      "name": "Response Data",
+      "description": "Incident management and response performance.",
+      "metrics": [
+        {
+          "key": "incident_count",
+          "label": "Incident Count",
+          "description": "Number of incidents recorded within the reporting period."
+        },
+        {
+          "key": "incident_severity_avg",
+          "label": "Average Incident Severity",
+          "description": "Average severity score of incidents."
+        },
+        {
+          "key": "mtta_hours",
+          "label": "MTTA (Hours)",
+          "description": "Mean time to acknowledge alerts."
+        },
+        {
+          "key": "mttr_hours",
+          "label": "MTTR (Hours)",
+          "description": "Mean time to resolve alerts."
+        }
+      ]
+    },
+    {
+      "name": "Risk Data",
+      "description": "Risks, decisions, and actions needed for portfolio success.",
+      "metrics": [
+        {
+          "key": "expansion_risks",
+          "label": "Expansion Risks",
+          "description": "Constraints or risks such as site access or utilities."
+        },
+        {
+          "key": "top_risks",
+          "label": "Top Risks",
+          "description": "Highest-priority risks affecting the portfolio."
+        },
+        {
+          "key": "decisions_needed",
+          "label": "Decisions Needed",
+          "description": "Outstanding business or operational decisions."
+        },
+        {
+          "key": "open_actions_count",
+          "label": "Open Actions",
+          "description": "Number of open follow-up actions."
+        },
+        {
+          "key": "next_milestones",
+          "label": "Next Milestones",
+          "description": "Upcoming deliverables or milestones."
+        }
+      ]
+    }
+  ]
+}

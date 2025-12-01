@@ -1,0 +1,74 @@
+{
+  "group_order": 1,
+  "group_name": "Water Data",
+  "property_group_id": 1,
+  "prompt": "You are auditing 'Water Data' metrics for property group ID 1.\nUse the metric-specific prompts below to drive each fetch. Always search the Postman collection before calling an unfamiliar endpoint, and cite the exact API path.\n\nMetrics overview:\n- gallons_saved_qtd: Net gallons of water saved in the current quarter.\n- gallons_saved_ytd: Net gallons of water saved since the start of the calendar year.\n- gallons_saved_itd: Net gallons of water saved since the project started.\n- total_water_usage_gal: Total gallons of water consumed during the reporting period.\n- baseline_water_usage_gal: Expected gallons of water usage without the Symmons system.\n- normalized_water_use_per_key: Water consumption normalized per key / square foot / bed.\n\nMetric-specific instructions:\n1. Gather 'Gallons Saved (Quarter-to-Date)' (key: gallons_saved_qtd) (Net gallons of water saved in the current quarter.) for property group ID 1. Use Postman endpoint search before calling APIs you are not certain about. Quote the exact value, units, timeframe, and describe the source endpoint.\n2. Gather 'Gallons Saved (Year-to-Date)' (key: gallons_saved_ytd) (Net gallons of water saved since the start of the calendar year.) for property group ID 1. Use Postman endpoint search before calling APIs you are not certain about. Quote the exact value, units, timeframe, and describe the source endpoint.\n3. Gather 'Gallons Saved (Inception-to-Date)' (key: gallons_saved_itd) (Net gallons of water saved since the project started.) for property group ID 1. Use Postman endpoint search before calling APIs you are not certain about. Quote the exact value, units, timeframe, and describe the source endpoint.\n4. Gather 'Total Water Usage' (key: total_water_usage_gal) (Total gallons of water consumed during the reporting period.) for property group ID 1. Use Postman endpoint search before calling APIs you are not certain about. Quote the exact value, units, timeframe, and describe the source endpoint.\n5. Gather 'Baseline Water Usage' (key: baseline_water_usage_gal) (Expected gallons of water usage without the Symmons system.) for property group ID 1. Use Postman endpoint search before calling APIs you are not certain about. Quote the exact value, units, timeframe, and describe the source endpoint.\n6. Gather 'Normalized Water Use' (key: normalized_water_use_per_key) (Water consumption normalized per key / square foot / bed.) for property group ID 1. Use Postman endpoint search before calling APIs you are not certain about. Quote the exact value, units, timeframe, and describe the source endpoint.\n\nAfter gathering data for each metric, summarize the findings with values, units, endpoints, and any gaps.",
+  "metrics": [
+    {
+      "key": "gallons_saved_qtd",
+      "label": "Gallons Saved (Quarter-to-Date)",
+      "description": "Net gallons of water saved in the current quarter."
+    },
+    {
+      "key": "gallons_saved_ytd",
+      "label": "Gallons Saved (Year-to-Date)",
+      "description": "Net gallons of water saved since the start of the calendar year."
+    },
+    {
+      "key": "gallons_saved_itd",
+      "label": "Gallons Saved (Inception-to-Date)",
+      "description": "Net gallons of water saved since the project started."
+    },
+    {
+      "key": "total_water_usage_gal",
+      "label": "Total Water Usage",
+      "description": "Total gallons of water consumed during the reporting period."
+    },
+    {
+      "key": "baseline_water_usage_gal",
+      "label": "Baseline Water Usage",
+      "description": "Expected gallons of water usage without the Symmons system."
+    },
+    {
+      "key": "normalized_water_use_per_key",
+      "label": "Normalized Water Use",
+      "description": "Water consumption normalized per key / square foot / bed."
+    }
+  ],
+  "metric_prompts": [
+    {
+      "key": "gallons_saved_qtd",
+      "label": "Gallons Saved (Quarter-to-Date)",
+      "prompt": "Gather 'Gallons Saved (Quarter-to-Date)' (key: gallons_saved_qtd) (Net gallons of water saved in the current quarter.) for property group ID 1. Use Postman endpoint search before calling APIs you are not certain about. Quote the exact value, units, timeframe, and describe the source endpoint."
+    },
+    {
+      "key": "gallons_saved_ytd",
+      "label": "Gallons Saved (Year-to-Date)",
+      "prompt": "Gather 'Gallons Saved (Year-to-Date)' (key: gallons_saved_ytd) (Net gallons of water saved since the start of the calendar year.) for property group ID 1. Use Postman endpoint search before calling APIs you are not certain about. Quote the exact value, units, timeframe, and describe the source endpoint."
+    },
+    {
+      "key": "gallons_saved_itd",
+      "label": "Gallons Saved (Inception-to-Date)",
+      "prompt": "Gather 'Gallons Saved (Inception-to-Date)' (key: gallons_saved_itd) (Net gallons of water saved since the project started.) for property group ID 1. Use Postman endpoint search before calling APIs you are not certain about. Quote the exact value, units, timeframe, and describe the source endpoint."
+    },
+    {
+      "key": "total_water_usage_gal",
+      "label": "Total Water Usage",
+      "prompt": "Gather 'Total Water Usage' (key: total_water_usage_gal) (Total gallons of water consumed during the reporting period.) for property group ID 1. Use Postman endpoint search before calling APIs you are not certain about. Quote the exact value, units, timeframe, and describe the source endpoint."
+    },
+    {
+      "key": "baseline_water_usage_gal",
+      "label": "Baseline Water Usage",
+      "prompt": "Gather 'Baseline Water Usage' (key: baseline_water_usage_gal) (Expected gallons of water usage without the Symmons system.) for property group ID 1. Use Postman endpoint search before calling APIs you are not certain about. Quote the exact value, units, timeframe, and describe the source endpoint."
+    },
+    {
+      "key": "normalized_water_use_per_key",
+      "label": "Normalized Water Use",
+      "prompt": "Gather 'Normalized Water Use' (key: normalized_water_use_per_key) (Water consumption normalized per key / square foot / bed.) for property group ID 1. Use Postman endpoint search before calling APIs you are not certain about. Quote the exact value, units, timeframe, and describe the source endpoint."
+    }
+  ],
+  "agent_summary": "Failed to complete 'Water Data' request: Agent reached max turns without producing a reply.\nTraceback (most recent call last):\n  File \"E:\\01_Harvard\\2025Fall\\MIT Elab\\run_agent.py\", line 232, in run_requirements_workflow\n    result = agent.run(prompt)\n             ^^^^^^^^^^^^^^^^^\n  File \"E:\\01_Harvard\\2025Fall\\MIT Elab\\agentic_app\\agent.py\", line 147, in run\n    raise RuntimeError(\"Agent reached max turns without producing a reply.\")\nRuntimeError: Agent reached max turns without producing a reply.\n",
+  "fetches": [],
+  "tool_calls": [],
+  "completed_at": "2025-11-10T18:58:03.457544+00:00"
+}

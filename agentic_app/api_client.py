@@ -69,6 +69,23 @@ class SymmonsAPIClient:
             }
         return self._post("/api/v2/report/property-summary", json_payload=payload)
 
+    def call_endpoint(
+        self,
+        method: str,
+        path: str,
+        *,
+        params: Optional[Dict[str, Any]] = None,
+        json_payload: Optional[Dict[str, Any]] = None,
+    ) -> Dict[str, Any]:
+        normalized = path if path.startswith("/") else f"/{path}"
+        resp = self._request(
+            method.upper(),
+            normalized,
+            params=params,
+            json_payload=json_payload,
+        )
+        return self._parse_json(resp)
+
     # --- Internal helpers -----------------------------------------------------------
 
     def _get(

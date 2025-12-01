@@ -1,0 +1,430 @@
+{
+  "4.1_executive_summary": {
+    "hotel_name": "Hilton Riverside",
+    "quarter": "Q3 2025",
+    "opening_statement_primary": "In Q3 2025, AI driven water and energy optimization at Hilton Riverside delivered a quarterly financial impact of 53 thousand dollars, bringing inception to date savings to 210 thousand dollars since go live in April 2024. The project has surpassed full payback and is on track for an estimated 3.2x lifetime ROI while supporting Hilton’s corporate ESG and water risk commitments.",
+    "opening_statement_decline_acknowledgement": "While total savings increased slightly versus Q2, water related savings declined by 13 percent this quarter due to cooler weather, lower cooling tower usage, and the absence of major leak events seen last quarter. The AI agents had already detected and resolved those earlier anomalies, so the lower water savings now reflects a more efficient, stabilized property rather than performance degradation.",
+    "top_5_takeaways": [
+      "Net quarterly benefit of 53 thousand dollars, up about 2 percent versus Q2, with no additional capital deployed.",
+      "Water cost avoidance decreased from 30 thousand to 26 thousand dollars, driven by normalized operations after last quarter’s leak repairs; this should stabilize going forward.",
+      "Energy savings rose from 14 thousand to 18 thousand dollars as AI agents optimized chiller staging and laundry schedules during peak occupancy days.",
+      "The project achieved full payback in month 15 with an inception to date ROI multiple of 1.17x and projected 3.2x ROI over five years.",
+      "The site is now well positioned to support GRESB, CDP Water Security, and TCFD disclosures and to pursue green financing linked to water and energy performance."
+    ],
+    "roi_snapshot": {
+      "total_financial_impact_Q3_usd": 53000,
+      "total_financial_impact_trend_vs_Q2_pct": 2,
+      "water_cost_avoided_Q3_usd": 26000,
+      "water_cost_avoided_trend_vs_Q2_pct": -13,
+      "energy_cost_avoided_Q3_usd": 18000,
+      "energy_cost_avoided_trend_vs_Q2_pct": 29,
+      "downtime_cost_avoided_Q3_usd": 9000,
+      "downtime_cost_avoided_trend_vs_Q2_pct": 13,
+      "payback_status": "achieved",
+      "payback_achieved_month": "2025-07",
+      "total_investment_to_date_usd": 180000,
+      "roi_multiple_to_date": 1.17
+    },
+    "critical_decision": {
+      "description": "Approve Phase 2 expansion to pool and irrigation monitoring plus kitchen hot water loop optimization.",
+      "deadline": "2026-01-31",
+      "incremental_capex_usd": 120000,
+      "expected_additional_annual_savings_usd_range": {
+        "low": 95000,
+        "high": 120000
+      },
+      "expected_portfolio_level_roi_multiple_after_phase2": 3.8
+    },
+    "next_steps": [
+      {
+        "description": "Finance and asset management review and sign off Phase 2 business case.",
+        "target_date": "2026-01-31"
+      },
+      {
+        "description": "Engineering and sustainability teams finalize scope and vendor schedule.",
+        "target_date": "2026-02-28"
+      },
+      {
+        "description": "Configure AI agents and commission new systems, with first uplift in savings visible in the next QBR after go live.",
+        "target_period": "Q2 2026"
+      }
+    ]
+  },
+  "4.2_portfolio_roi_snapshot": {
+    "environmental_value": {
+      "net_gallons_saved": {
+        "qtd": 2100000,
+        "ytd": 5800000,
+        "inception_to_date": 8400000
+      },
+      "carbon_avoided_tCO2e": {
+        "qtd": 150,
+        "inception_to_date": 420
+      },
+      "wastewater_reduction_gallons_inception_to_date": 2000000,
+      "framework_alignment": {
+        "GRESB": "Supports resource efficiency indicators through audited water intensity reductions per occupied room.",
+        "CDP_water_security": "Provides quantifiable data on water risk mitigation, leak detection response, and operational controls.",
+        "TCFD_water_stress": "Demonstrates active management of physical water risk for a hotel operating under increasing drought and stress scenarios."
+      },
+      "green_financing_potential": {
+        "summary": "Performance trajectory supports eligibility for interest rate reductions in future green or sustainability linked loan structures.",
+        "estimated_interest_rate_reduction_basis_points_range": {
+          "low": 10,
+          "high": 20
+        }
+      }
+    },
+    "financial_value": {
+      "baseline_quarterly_costs_before_AI": {
+        "water_and_sewer_usd": 130000,
+        "energy_hot_water_and_HVAC_usd": 240000,
+        "unplanned_outage_and_leak_response_usd": 18000
+      },
+      "actual_quarterly_costs_after_AI_Q3_2025": {
+        "water_and_sewer_usd": 104000,
+        "energy_hot_water_and_HVAC_usd": 222000,
+        "unplanned_outage_and_leak_response_usd": 9000
+      },
+      "quarterly_savings_Q3_2025": {
+        "water_cost_avoided_usd": 26000,
+        "energy_cost_avoided_usd": 18000,
+        "downtime_cost_avoided_usd": 9000,
+        "total_financial_impact_usd": 53000
+      },
+      "cumulative_impact": {
+        "total_financial_impact_2025_YTD_usd": 145000,
+        "total_financial_impact_inception_to_date_usd": 210000,
+        "total_investment_to_date_usd": 180000,
+        "roi_multiple_to_date": 1.17,
+        "forecast_five_year_financial_impact_usd_range": {
+          "low": 580000,
+          "high": 620000
+        },
+        "forecast_five_year_roi_multiple_range": {
+          "low": 3.2,
+          "high": 3.4
+        }
+      }
+    },
+    "performance_indicators": {
+      "payback_status": "achieved",
+      "payback_achieved_month": "2025-07",
+      "trend_vs_prior_QBR": {
+        "total_savings": "slight_increase",
+        "total_savings_pct_change": 2,
+        "water_savings": "declining",
+        "water_savings_pct_change": -13,
+        "energy_savings": "increasing",
+        "energy_savings_pct_change": 29
+      },
+      "expansion_potential": {
+        "similar_properties_count": 4,
+        "estimated_incremental_annual_savings_all_properties_usd_range": {
+          "low": 380000,
+          "high": 450000
+        },
+        "estimated_five_year_impact_all_properties_usd_range": {
+          "low": 1800000,
+          "high": 2000000
+        }
+      }
+    }
+  },
+  "4.3_installation_and_rollout_pace": {
+    "sites_definition": "Systems rather than physical buildings, covering major water and energy intensive assets.",
+    "systems_in_scope": [
+      "Cooling towers",
+      "Laundry",
+      "Domestic hot water loops",
+      "Kitchen and back of house",
+      "Pool and irrigation"
+    ],
+    "status_counts": {
+      "total_systems_in_scope": 5,
+      "installed_and_fully_monitored": 4,
+      "in_progress": 1,
+      "not_started": 0
+    },
+    "installation_metrics": {
+      "average_weeks_from_approval_to_go_live_per_system": 5,
+      "on_time_milestone_rate_pct": 92,
+      "operations_engagement": {
+        "average_platform_logins_per_week": 32,
+        "daily_alert_review_rate_engineering_pct": 85,
+        "average_resolution_time_high_priority_alerts_hours": 4,
+        "baseline_resolution_time_high_priority_alerts_hours": 11
+      }
+    },
+    "key_insight": "Fast rollout and strong engagement from engineering have shortened the effective payback period and built trust that the AI agents are catching issues early rather than creating extra work. The remaining pool and irrigation scope is the last piece needed to fully capture outdoor water savings and reduce seasonal variability."
+  },
+  "4.4_risks_and_asks": {
+    "top_3_risks": [
+      {
+        "title": "Connectivity gaps in basement mechanical rooms",
+        "description": "Intermittent network coverage may delay real time alerts from certain meters and create blind spots for leak detection.",
+        "urgency_level": "critical",
+        "action_required_timing": "this_month",
+        "owner": "Hilton IT and facilities",
+        "ask": "Approve budget for network upgrades and additional access points.",
+        "estimated_budget_usd": 15000,
+        "target_completion_date": "2025-12-31"
+      },
+      {
+        "title": "Staff turnover in engineering and housekeeping",
+        "description": "New staff may not be fully trained on responding to AI driven alerts, which can lengthen response times to anomalies.",
+        "urgency_level": "important",
+        "action_required_timing": "this_quarter",
+        "owner": "Hotel HR and operations leadership",
+        "ask": "Launch a recurring quarterly training and onboarding program focused on alert handling and basic system interpretation.",
+        "estimated_training_time_hours_per_new_hire": 2,
+        "target_program_start_date": "2026-03-31"
+      },
+      {
+        "title": "Future changes in local water tariffs and regulation",
+        "description": "Tariff increases and new drought restrictions may materially change the financial profile of water savings.",
+        "urgency_level": "monitor",
+        "action_required_timing": "no_immediate_action",
+        "owner": "Sustainability and finance leads",
+        "ask": "Track tariff and regulatory changes and revisit the long term savings forecast in the Q3 2026 QBR.",
+        "review_target_quarter": "Q3 2026"
+      }
+    ]
+  },
+  "4.6_storytelling_layer_magic_moments": {
+    "magic_moments": [
+      {
+        "title": "Cooling tower leak caught overnight",
+        "problem": "At 2:14 a.m. on July 18, tower make up flow spiked to three times normal with no matching rise in occupancy or weather demand.",
+        "detection": "The AI agent flagged a suspected leak within 7 minutes and sent an alert to the night engineer by mobile and email.",
+        "fix": "Night engineer James Kim isolated a failed float valve and temporary bypass by 3:05 a.m. and scheduled permanent repair in the CMMS.",
+        "savings_impact": {
+          "description": "Water loss and sewer charges avoided plus reduced risk of cooling downtime on a high occupancy weekend.",
+          "gallons_avoided": 120000,
+          "financial_savings_usd": 4800
+        },
+        "people_recognized": [
+          "James Kim"
+        ]
+      },
+      {
+        "title": "Laundry heat recovery tuned for weekends",
+        "problem": "Weekend occupancy reached 92 percent, but laundry gas usage remained at weekday levels due to inefficient heat recovery and rinse temperatures.",
+        "detection": "Over several weeks, the AI agent identified a consistent pattern of higher than expected BTU use per pound of linen on Fridays and Saturdays.",
+        "fix": "Chief engineer Maria Lopez and the Symmons CSM adjusted rinse temperatures and heat recovery setpoints, locking in a new schedule for high occupancy weekends.",
+        "savings_impact": {
+          "description": "Reduction in gas consumption on high occupancy days with associated carbon benefits.",
+          "gas_reduction_pct_high_occupancy_days": 9,
+          "quarterly_savings_usd": 6100,
+          "annual_carbon_avoided_tCO2e": 24
+        },
+        "people_recognized": [
+          "Maria Lopez"
+        ]
+      },
+      {
+        "title": "Preemptive domestic hot water pump failure avoided",
+        "problem": "Vibration and run time data on a domestic hot water pump indicated an emerging bearing issue that could have caused a guest floor to lose hot water during peak check in hours.",
+        "detection": "The AI agent detected abnormal cycling and elevated temperature and issued a predictive maintenance alert marked as high priority.",
+        "fix": "Engineering scheduled planned pump replacement on a low occupancy Tuesday and housekeeping supervisor Aisha Khan adjusted room cleaning schedules to avoid guest disruption.",
+        "savings_impact": {
+          "description": "Potential outage and revenue risk avoided through planned maintenance.",
+          "hours_outage_avoided": 6,
+          "estimated_guest_stays_protected": 220,
+          "estimated_revenue_risk_avoided_usd": 9000
+        },
+        "people_recognized": [
+          "Aisha Khan",
+          "Engineering team"
+        ]
+      }
+    ]
+  },
+  "4.7_adoption_and_engagement": {
+    "user_counts": {
+      "engineering_active_users": 7,
+      "operations_and_housekeeping_active_users": 4,
+      "asset_management_and_finance_active_users": 3
+    },
+    "usage_metrics_Q3": {
+      "average_platform_logins_per_week": 32,
+      "alerts_generated": 146,
+      "alerts_acknowledged_within_4_hours_pct": 88,
+      "high_priority_alerts_resolved_within_6_hours_pct": 82,
+      "high_priority_alerts_resolved_within_6_hours_pct_Q2_comparison": 65
+    },
+    "behavior_roi_correlation": {
+      "high_engagement_threshold_alert_ack_pct": 80,
+      "savings_uplift_high_engagement_weeks_pct": 19,
+      "insight": "Weeks with alert acknowledgement above 80 percent delivered about 19 percent higher water and energy savings than lower engagement weeks."
+    },
+    "recognition": {
+      "top_contributors": [
+        {
+          "name": "Maria Lopez",
+          "role": "Chief Engineer",
+          "contribution_summary": "Led rollout of optimized laundry and domestic hot water controls.",
+          "savings_attributed_Q3_usd": 18000
+        },
+        {
+          "name": "James Kim",
+          "role": "Night Engineer",
+          "contribution_summary": "Rapid response to overnight anomalies, including the cooling tower leak.",
+          "gallons_loss_avoided_Q3": 150000
+        },
+        {
+          "name": "Aisha Khan",
+          "role": "Housekeeping Supervisor",
+          "contribution_summary": "Coordinated housekeeping schedules around planned maintenance to minimize guest impact.",
+          "guest_impact_events_avoided_estimate": 3
+        }
+      ]
+    }
+  },
+  "4.8_expansion_and_recommendations": {
+    "expansion_opportunities": [
+      {
+        "priority_rank": 1,
+        "name": "Pool and irrigation monitoring",
+        "scope": "Add dedicated meters and anomaly detection on pool backwash cycles and irrigation zones.",
+        "estimated_annual_savings_usd_range": {
+          "low": 11000,
+          "high": 14000
+        },
+        "estimated_annual_water_savings_gallons_range": {
+          "low": 400000,
+          "high": 600000
+        },
+        "estimated_annual_carbon_avoided_tCO2e_range": {
+          "low": 15,
+          "high": 18
+        },
+        "investment_usd": 55000,
+        "simple_payback_quarters_range": {
+          "low": 4.5,
+          "high": 5.5
+        },
+        "alignment_with_customer_goals": [
+          "water_reduction",
+          "drought_resilience",
+          "ESG_reporting"
+        ]
+      },
+      {
+        "priority_rank": 2,
+        "name": "Kitchen hot water and dish machine optimization",
+        "scope": "Deeper telemetry on dish machines and kitchen hot water loops, focusing on idle run time and overnight setpoint drift.",
+        "estimated_annual_savings_usd_range": {
+          "low": 16000,
+          "high": 21000
+        },
+        "estimated_annual_energy_savings_usd_range": {
+          "low": 13000,
+          "high": 17000
+        },
+        "estimated_annual_water_savings_usd_range": {
+          "low": 3000,
+          "high": 4000
+        },
+        "investment_usd": 40000,
+        "simple_payback_quarters_range": {
+          "low": 6,
+          "high": 7
+        },
+        "alignment_with_customer_goals": [
+          "ESG",
+          "operational_efficiency",
+          "kitchen_productivity"
+        ]
+      },
+      {
+        "priority_rank": 3,
+        "name": "Portfolio cross sell to similar Hilton properties",
+        "scope": "Replicate the Hilton Riverside configuration at three similar full service properties in the region.",
+        "estimated_annual_savings_per_property_usd_range": {
+          "low": 85000,
+          "high": 110000
+        },
+        "estimated_annual_water_savings_per_property_gallons_range": {
+          "low": 1800000,
+          "high": 2400000
+        },
+        "estimated_annual_carbon_avoided_per_property_tCO2e_range": {
+          "low": 70,
+          "high": 90
+        },
+        "investment_per_property_usd_range": {
+          "low": 180000,
+          "high": 200000
+        },
+        "simple_payback_quarters_range": {
+          "low": 5,
+          "high": 7
+        },
+        "alignment_with_customer_goals": [
+          "portfolio_level_ESG_scores",
+          "GRESB_improvement",
+          "green_financing_eligibility"
+        ]
+      }
+    ]
+  },
+  "4.9_action_plan_and_decisions": {
+    "tasks_commitments_owners_timelines": [
+      {
+        "task": "Approve Phase 2 capital for pool, irrigation, and kitchen scope.",
+        "owner": "Ownership group and asset management",
+        "target_date": "2026-01-31",
+        "status": "pending_decision"
+      },
+      {
+        "task": "Finalize detailed engineering design and meter locations.",
+        "owner": "Symmons engineering and Maria Lopez",
+        "target_date": "2026-02-28",
+        "status": "in_planning"
+      },
+      {
+        "task": "Implement network upgrades in basement mechanical rooms.",
+        "owner": "Hilton IT and facilities",
+        "target_date": "2025-12-31",
+        "status": "open_critical"
+      },
+      {
+        "task": "Launch quarterly training for new engineering and housekeeping staff.",
+        "owner": "Symmons CSM and hotel HR",
+        "target_date": "2026-03-31",
+        "status": "proposed"
+      },
+      {
+        "task": "Standardize alert response playbooks and escalation paths.",
+        "owner": "Maria Lopez and operations leadership",
+        "target_date": "2026-03-31",
+        "status": "draft_in_progress"
+      },
+      {
+        "task": "Recalibrate savings baseline after the first full year of operation.",
+        "owner": "Symmons analytics and Hilton finance",
+        "target_period": "Q3 2026 QBR",
+        "status": "scheduled"
+      }
+    ],
+    "property_evaluation_takeaways": [
+      "Hilton Riverside has achieved payback on the initial investment and is now in the value harvesting phase.",
+      "Savings are stable to slightly increasing with quarter to quarter variation driven mainly by weather and prior leak events rather than system underperformance.",
+      "Adoption metrics show that engaged teams drive higher ROI, with alert acknowledgement and training participation strongly linked to financial outcomes.",
+      "Remaining opportunities in pool, irrigation, and kitchen systems present attractive payback and strong alignment with water and carbon reduction goals."
+    ],
+    "next_steps_and_recommendations": {
+      "for_symmons": [
+        "Refine AI models using Hilton Riverside data to improve anomaly detection quality and reduce false positives.",
+        "Provide a standardized quarterly magic moments bundle that links narrative stories to quantified savings.",
+        "Prepare a portfolio expansion playbook for three candidate sister properties, including reference costs and savings ranges."
+      ],
+      "for_hilton_riverside_and_ownership": [
+        "Make a go or no go decision on Phase 2 by 2026-01-31 to enable benefits ahead of the summer season.",
+        "Commit to maintaining alert acknowledgement above 85 percent and high priority resolution under 6 hours as formal operational targets.",
+        "Use this Q3 report in internal ESG and financing discussions to explore green or sustainability linked loan structures where performance based savings can unlock better terms."
+      ]
+    }
+  }
+}
