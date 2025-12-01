@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QBR Pro Vision - Filled Template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', 'Segoe UI', sans-serif;
+        background-color: #F5F5F7;
+        color: #1D1D1F;
+        -webkit-font-smoothing: antialiased;
+      }
+      .glass {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+      }
+      @media print {
+        body {
+          background-color: white;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+        .glass { display: none; }
+        .break-after-page { break-after: page; page-break-after: always; }
+      }
+    </style>
+  </head>
+  <body class="bg-[#F5F5F7]">
+    <header class="sticky top-0 z-50 glass print:hidden">
+      <div class="max-w-6xl mx-auto px-8 h-16 flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <h1 class="text-lg font-semibold tracking-tight text-gray-900">{{client_name}}</h1>
+          <span class="px-3 py-1 bg-gray-100 text-gray-500 text-xs font-bold rounded-full">{{quarter_label}}</span>
+        </div>
+        <div class="text-xs text-gray-400">Filled by OpenAI Agent</div>
+      </div>
+    </header>
+
+    <main class="mx-auto w-full max-w-[1100px] bg-white shadow-2xl print:shadow-none print:max-w-none">
+      <!-- The agent duplicates the section below for the portfolio overview and each hotel detail page. -->
+      <section class="w-full min-h-[1100px] p-12 lg:p-16 flex flex-col bg-white relative overflow-hidden break-after-page print:break-after-page">
+        <div class="mb-12 border-b border-gray-100 pb-8 flex justify-between items-end">
+          <div>
+            <span class="text-blue-600 font-bold tracking-wider uppercase text-xs mb-2 block">{{subtitle}}</span>
+            <h2 class="text-4xl font-bold tracking-tight text-[#1D1D1F]">{{title}}</h2>
+          </div>
+          <div class="text-right">
+            <p class="text-sm text-gray-400">{{quarter_label}} Report</p>
+          </div>
+        </div>
+
+        <div class="mb-10">
+          <h3 class="text-3xl font-semibold text-[#1D1D1F] mb-4 tracking-tight leading-tight">{{headline}}</h3>
+          <p class="text-lg text-gray-600 leading-relaxed font-normal max-w-4xl">{{opening_statement_primary}}</p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6 mb-12">
+          <div class="flex flex-col p-6 rounded-3xl transition-all duration-300 bg-gradient-to-br from-blue-600 to-blue-700 text-white shadow-lg shadow-blue-500/20">
+            <span class="text-xs font-semibold uppercase tracking-wider mb-2 text-blue-100">Total Impact</span>
+            <div class="mt-auto text-3xl font-bold tracking-tight leading-none">${{total_financial_impact_usd}}</div>
+          </div>
+          <div class="flex flex-col p-6 rounded-3xl bg-white text-gray-900 shadow-sm">
+            <span class="text-xs font-semibold uppercase tracking-wider mb-2 text-gray-400">Total Investment</span>
+            <div class="mt-auto text-3xl font-bold tracking-tight leading-none">${{total_investment_to_date_usd}}</div>
+          </div>
+          <div class="flex flex-col p-6 rounded-3xl bg-white text-gray-900 shadow-sm">
+            <span class="text-xs font-semibold uppercase tracking-wider mb-2 text-gray-400">ROI Multiple</span>
+            <div class="mt-auto text-3xl font-bold tracking-tight leading-none">{{roi_multiple_to_date}}x</div>
+          </div>
+          <div class="flex flex-col p-6 rounded-3xl bg-white text-gray-900 shadow-sm">
+            <span class="text-xs font-semibold uppercase tracking-wider mb-2 text-gray-400">Water Savings</span>
+            <div class="mt-auto text-3xl font-bold tracking-tight leading-none">${{water_cost_avoided_usd}}</div>
+          </div>
+          <div class="flex flex-col p-6 rounded-3xl bg-white text-gray-900 shadow-sm">
+            <span class="text-xs font-semibold uppercase tracking-wider mb-2 text-gray-400">Energy Savings</span>
+            <div class="mt-auto text-3xl font-bold tracking-tight leading-none">${{energy_cost_avoided_usd}}</div>
+          </div>
+          <div class="flex flex-col p-6 rounded-3xl bg-white text-gray-900 shadow-sm">
+            <span class="text-xs font-semibold uppercase tracking-wider mb-2 text-gray-400">Downtime Savings</span>
+            <div class="mt-auto text-3xl font-bold tracking-tight leading-none">${{downtime_cost_avoided_usd}}</div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-12 gap-10 flex-grow">
+          <div class="col-span-7">
+            <h4 class="text-lg font-bold text-[#1D1D1F] mb-6 uppercase tracking-wider text-xs">Strategic Takeaways</h4>
+            <div class="space-y-4">
+              <div class="flex gap-4 items-start">
+                <div class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 flex-shrink-0"></div>
+                <p class="text-gray-700 leading-relaxed">{{takeaway_one}}</p>
+              </div>
+              <div class="flex gap-4 items-start">
+                <div class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 flex-shrink-0"></div>
+                <p class="text-gray-700 leading-relaxed">{{takeaway_two}}</p>
+              </div>
+              <div class="flex gap-4 items-start">
+                <div class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 flex-shrink-0"></div>
+                <p class="text-gray-700 leading-relaxed">{{takeaway_three}}</p>
+              </div>
+              <div class="flex gap-4 items-start">
+                <div class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 flex-shrink-0"></div>
+                <p class="text-gray-700 leading-relaxed">{{takeaway_four}}</p>
+              </div>
+              <div class="flex gap-4 items-start">
+                <div class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 flex-shrink-0"></div>
+                <p class="text-gray-700 leading-relaxed">{{takeaway_five}}</p>
+              </div>
+            </div>
+
+            <div class="mt-10 pt-8 border-t border-gray-100">
+              <h4 class="text-lg font-bold text-[#1D1D1F] mb-6 uppercase tracking-wider text-xs">Next Steps</h4>
+              <div class="grid grid-cols-1 gap-4">
+                <div class="flex justify-between items-center text-sm">
+                  <span class="text-gray-700">{{next_step_one}}</span>
+                  <span class="font-semibold text-gray-400 bg-gray-50 px-2 py-1 rounded">{{next_step_one_date}}</span>
+                </div>
+                <div class="flex justify-between items-center text-sm">
+                  <span class="text-gray-700">{{next_step_two}}</span>
+                  <span class="font-semibold text-gray-400 bg-gray-50 px-2 py-1 rounded">{{next_step_two_date}}</span>
+                </div>
+                <div class="flex justify-between items-center text-sm">
+                  <span class="text-gray-700">{{next_step_three}}</span>
+                  <span class="font-semibold text-gray-400 bg-gray-50 px-2 py-1 rounded">{{next_step_three_date}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-span-5 flex flex-col">
+            <div class="p-8 rounded-3xl flex-grow relative overflow-hidden flex flex-col bg-[#1D1D1F] text-white">
+              <h4 class="font-bold mb-4 uppercase tracking-wider text-xs text-gray-400">{{decision_header}}</h4>
+              <p class="text-lg leading-relaxed mb-8 text-gray-200">{{critical_decision_narrative}}</p>
+              <div class="mt-auto pt-6 border-t border-white/10">
+                <div class="flex justify-between items-end mb-4">
+                  <div>
+                    <p class="text-xs uppercase tracking-wider mb-1 text-gray-500">Invest</p>
+                    <p class="text-2xl font-semibold">${{phase2_capex}}</p>
+                  </div>
+                  <div class="text-right">
+                    <p class="text-xs uppercase tracking-wider mb-1 text-gray-500">Return</p>
+                    <p class="text-2xl font-semibold text-green-500">{{phase2_roi}}x</p>
+                  </div>
+                </div>
+                <div class="text-xs text-center py-2 rounded-lg font-medium bg-white/10 text-gray-300">Decision by {{phase2_deadline}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-auto pt-8 border-t border-gray-100 flex justify-between items-center text-xs text-gray-400">
+          <span>Generated by QBR Pro Vision</span>
+          <span>{{page_context}}</span>
+          <span>Page {{page_number}}</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

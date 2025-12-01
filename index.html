@@ -1,46 +1,89 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QBR 4.1 Executive Summary</title>
-  <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QBR Pro Vision</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              apple: {
+                gray: '#F5F5F7',
+                text: '#1D1D1F',
+                blue: '#0071E3',
+                card: '#FFFFFF',
+              }
+            },
+            boxShadow: {
+              'soft': '0 4px 20px rgba(0, 0, 0, 0.03)',
+              'float': '0 8px 30px rgba(0, 0, 0, 0.06)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F5F5F7;
+        color: #1D1D1F;
+        -webkit-font-smoothing: antialiased;
+      }
+      .glass {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+      }
+      
+      @media print {
+        @page {
+          size: A4 portrait;
+          margin: 12mm;
+        }
+
+        body {
+          background-color: white;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+        .glass {
+          display: none;
+        }
+        .break-after-page { break-after: page; page-break-after: always; }
+        .report-page {
+          break-inside: avoid;
+          page-break-inside: avoid;
+          max-width: 210mm;
+          min-height: calc(297mm - 24mm);
+          margin: 0 auto;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.3.1",
+    "react/": "https://esm.sh/react@18.3.1/",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+    "@google/genai": "https://esm.sh/@google/genai@1.30.0",
+    "react-dom/": "https://esm.sh/react-dom@18.3.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
 </head>
-<body>
-  <main class="page">
-    <div id="selection-controls" class="selection-controls">
-      <label>
-        Property
-        <select id="property-select"></select>
-      </label>
-      <label>
-        Hotel
-        <select id="hotel-select"></select>
-      </label>
-      <label>
-        Quarter
-        <select id="quarter-select"></select>
-      </label>
-    </div>
-
-    <header class="page-header"></header>
-
-    <section id="opening-statement" class="section"></section>
-
-    <section id="decline-ack" class="section"></section>
-
-    <section id="top-takeaways" class="section two-column"></section>
-
-    <section id="roi-snapshot" class="section two-column"></section>
-
-    <section id="critical-decision" class="section two-column"></section>
-
-    <section id="next-steps" class="section"></section>
-  </main>
-
-  <script src="data.js"></script>
-  <script src="elements.js"></script>
-  <script src="llm.js"></script>
-  <script src="render.js"></script>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
 </body>
 </html>
