@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QBR 4.1 Executive Summary</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <div id="selection-controls" class="selection-controls">
+      <label>
+        Property
+        <select id="property-select"></select>
+      </label>
+      <label>
+        Hotel
+        <select id="hotel-select"></select>
+      </label>
+      <label>
+        Quarter
+        <select id="quarter-select"></select>
+      </label>
+    </div>
+
+    <header class="page-header"></header>
+
+    <section id="opening-statement" class="section"></section>
+
+    <section id="decline-ack" class="section"></section>
+
+    <section id="top-takeaways" class="section two-column"></section>
+
+    <section id="roi-snapshot" class="section two-column"></section>
+
+    <section id="critical-decision" class="section two-column"></section>
+
+    <section id="next-steps" class="section"></section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="elements.js"></script>
+  <script src="llm.js"></script>
+  <script src="render.js"></script>
+</body>
+</html>

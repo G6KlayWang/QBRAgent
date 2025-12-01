@@ -1,0 +1,16 @@
+# OS / editor
+.DS_Store
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.env
+
+# Build artifacts
+dist/
+
+# Node (if ever added)
+node_modules/

@@ -1,0 +1,182 @@
+{
+  "properties": {
+    "hilton_regional_portfolio": {
+      "name": "Hilton Regional Portfolio",
+      "hotels": {
+        "hilton_riverside": {
+          "hotel_name": "Hilton Riverside",
+          "current_quarter": "2025-Q3",
+          "quarters": {
+            "2025-Q3": {
+              "label": "Q3 2025",
+              "metrics": {
+                "total_financial_impact_usd": 53000,
+                "water_cost_avoided_usd": 26000,
+                "energy_cost_avoided_usd": 18000,
+                "downtime_cost_avoided_usd": 9000,
+                "total_investment_to_date_usd": 180000,
+                "roi_multiple_to_date": 1.17,
+                "payback_status": "achieved",
+                "payback_achieved_month": "2025-07",
+                "alert_ack_within_4h_pct": 88,
+                "high_priority_resolution_lt_6h_pct": 82
+              }
+            },
+            "2025-Q2": {
+              "label": "Q2 2025",
+              "metrics": {
+                "total_financial_impact_usd": 52000,
+                "water_cost_avoided_usd": 30000,
+                "energy_cost_avoided_usd": 14000,
+                "downtime_cost_avoided_usd": 8000,
+                "total_investment_to_date_usd": 165000,
+                "roi_multiple_to_date": 1.05,
+                "payback_status": "in_progress",
+                "payback_achieved_month": null,
+                "alert_ack_within_4h_pct": 85,
+                "high_priority_resolution_lt_6h_pct": 74
+              }
+            }
+          },
+          "phase2_option": {
+            "decision_deadline": "2026-01-31",
+            "incremental_capex_usd": 120000,
+            "expected_additional_annual_savings_usd_range": { "low": 95000, "high": 120000 },
+            "expected_portfolio_level_roi_multiple_after_phase2": 3.8
+          }
+        },
+        "hilton_seaview": {
+          "hotel_name": "Hilton Seaview",
+          "current_quarter": "2025-Q3",
+          "quarters": {
+            "2025-Q3": {
+              "label": "Q3 2025",
+              "metrics": {
+                "total_financial_impact_usd": 41000,
+                "water_cost_avoided_usd": 19000,
+                "energy_cost_avoided_usd": 15000,
+                "downtime_cost_avoided_usd": 7000,
+                "total_investment_to_date_usd": 150000,
+                "roi_multiple_to_date": 0.98,
+                "payback_status": "in_progress",
+                "payback_achieved_month": null,
+                "alert_ack_within_4h_pct": 81,
+                "high_priority_resolution_lt_6h_pct": 76
+              }
+            },
+            "2025-Q2": {
+              "label": "Q2 2025",
+              "metrics": {
+                "total_financial_impact_usd": 40500,
+                "water_cost_avoided_usd": 20000,
+                "energy_cost_avoided_usd": 12700,
+                "downtime_cost_avoided_usd": 6400,
+                "total_investment_to_date_usd": 138000,
+                "roi_multiple_to_date": 0.93,
+                "payback_status": "in_progress",
+                "payback_achieved_month": null,
+                "alert_ack_within_4h_pct": 70,
+                "high_priority_resolution_lt_6h_pct": 65
+              }
+            }
+          },
+          "phase2_option": {
+            "decision_deadline": "2026-02-15",
+            "incremental_capex_usd": 90000,
+            "expected_additional_annual_savings_usd_range": { "low": 70000, "high": 90000 },
+            "expected_portfolio_level_roi_multiple_after_phase2": 3.4
+          }
+        }
+      }
+    },
+    "marriott_regional_portfolio": {
+      "name": "Marriott Regional Portfolio",
+      "hotels": {
+        "marriott_downtown": {
+          "hotel_name": "Marriott Downtown",
+          "current_quarter": "2025-Q3",
+          "quarters": {
+            "2025-Q3": {
+              "label": "Q3 2025",
+              "metrics": {
+                "total_financial_impact_usd": 60000,
+                "water_cost_avoided_usd": 25000,
+                "energy_cost_avoided_usd": 20000,
+                "downtime_cost_avoided_usd": 10000,
+                "total_investment_to_date_usd": 185000,
+                "roi_multiple_to_date": 1.25,
+                "payback_status": "achieved",
+                "payback_achieved_month": "2025-08",
+                "alert_ack_within_4h_pct": 92,
+                "high_priority_resolution_lt_6h_pct": 87
+              }
+            },
+            "2025-Q2": {
+              "label": "Q2 2025",
+              "metrics": {
+                "total_financial_impact_usd": 57000,
+                "water_cost_avoided_usd": 23000,
+                "energy_cost_avoided_usd": 18000,
+                "downtime_cost_avoided_usd": 9000,
+                "total_investment_to_date_usd": 170000,
+                "roi_multiple_to_date": 1.14,
+                "payback_status": "in_progress",
+                "payback_achieved_month": null,
+                "alert_ack_within_4h_pct": 85,
+                "high_priority_resolution_lt_6h_pct": 78
+              }
+            }
+          },
+          "phase2_option": {
+            "decision_deadline": "2026-06-01",
+            "incremental_capex_usd": 95000,
+            "expected_additional_annual_savings_usd_range": { "low": 75000, "high": 95000 },
+            "expected_portfolio_level_roi_multiple_after_phase2": 3.5
+          }
+        },
+        "marriott_airport": {
+          "hotel_name": "Marriott Airport",
+          "current_quarter": "2025-Q3",
+          "quarters": {
+            "2025-Q3": {
+              "label": "Q3 2025",
+              "metrics": {
+                "total_financial_impact_usd": 42000,
+                "water_cost_avoided_usd": 16000,
+                "energy_cost_avoided_usd": 14000,
+                "downtime_cost_avoided_usd": 8000,
+                "total_investment_to_date_usd": 130000,
+                "roi_multiple_to_date": 0.93,
+                "payback_status": "in_progress",
+                "payback_achieved_month": null,
+                "alert_ack_within_4h_pct": 75,
+                "high_priority_resolution_lt_6h_pct": 70
+              }
+            },
+            "2025-Q2": {
+              "label": "Q2 2025",
+              "metrics": {
+                "total_financial_impact_usd": 39000,
+                "water_cost_avoided_usd": 15000,
+                "energy_cost_avoided_usd": 12000,
+                "downtime_cost_avoided_usd": 7000,
+                "total_investment_to_date_usd": 118000,
+                "roi_multiple_to_date": 0.88,
+                "payback_status": "in_progress",
+                "payback_achieved_month": null,
+                "alert_ack_within_4h_pct": 70,
+                "high_priority_resolution_lt_6h_pct": 64
+              }
+            }
+          },
+          "phase2_option": {
+            "decision_deadline": "2026-03-10",
+            "incremental_capex_usd": 80000,
+            "expected_additional_annual_savings_usd_range": { "low": 60000, "high": 85000 },
+            "expected_portfolio_level_roi_multiple_after_phase2": 3.2
+          }
+        }
+      }
+    }
+  }
+}
